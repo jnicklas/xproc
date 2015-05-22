@@ -1,6 +1,11 @@
 require "spec_helper"
 
-using XProc
+begin
+  using XProc
+rescue NoMethodError => e
+  puts "Refinements not available, falling back to global"
+  require "xproc/global"
+end
 
 describe XProc do
   it "has a version number" do

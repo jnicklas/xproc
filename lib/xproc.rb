@@ -39,7 +39,7 @@ module XProc
     undef :!
   end
 
-  refine Object do
+  module CoreExt
     def x
       ::XProc::Proc.new(0)
     end
@@ -59,5 +59,12 @@ module XProc
     def x4
       ::XProc::Proc.new(3)
     end
+  end
+
+  begin
+    refine Object do
+      include ::XProc::CoreExt
+    end
+  rescue NoMethodError => e
   end
 end

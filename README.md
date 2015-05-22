@@ -17,11 +17,24 @@ Since it's a refinement, you have to explicitly include it wherever you want to
 use it. Use it like this:
 
 ``` ruby
+require "xproc"
+
 using XProc
 
 ["foo", "bar", "quox"].map(&x.gsub("oo", "aa")).select(&x.length <= 3)
 # => ["faa", "bar"]
 ```
+
+It is also possible to pull in XProc into the global namespace:
+
+``` ruby
+require "xproc/global"
+
+["foo", "bar", "quox"].map(&x.gsub("oo", "aa")).select(&x.length <= 3)
+# => ["faa", "bar"]
+```
+
+If your Ruby version does not support refinements you will have to do that.
 
 You can also use positional arguments like this:
 
