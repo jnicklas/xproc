@@ -8,7 +8,7 @@ convenient shorthand syntax, inspired by Scala, Crystal and Elixir.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'xproc'
+gem "xproc"
 ```
 
 ## Usage
