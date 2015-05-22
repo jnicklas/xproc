@@ -1,5 +1,7 @@
 # XProc
 
+[![Build Status](https://travis-ci.org/jnicklas/xproc.svg?branch=master)](https://travis-ci.org/jnicklas/xproc)
+
 XProc is a refinement for Ruby which allows you to write simple blocks using a
 convenient shorthand syntax, inspired by Scala, Crystal and Elixir.
 
