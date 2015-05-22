@@ -74,6 +74,8 @@ work:
 [1,2,3,4,5].reduce([], &x1 + Foo.new(x2))
 ```
 
+Generally, stick to simple stuff, very complicated expressions probably won't work.
+
 ## Is it any good?
 
 [No](https://news.ycombinator.com/item?id=3067434).
